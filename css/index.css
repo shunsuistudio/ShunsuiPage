@@ -1,4 +1,11 @@
-/* Estilos generales */
+html {
+    scrollbar-width: none;
+}
+  
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -85,21 +92,6 @@ p {
     color: #000000;
 }
 
-.hero .btn-primary {
-    display: inline-block;
-    background-color: #000000;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-.hero .btn-primary:hover {
-    background-color: #555;
-}
-
 /* Footer */
 footer {
     background-color: #000000;
@@ -115,7 +107,7 @@ footer .footer-content {
 
 footer p {
     color: white;
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin-bottom: 15px;
 }
 

@@ -1,0 +1,130 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Reseteamos estilos para body y html para asegurar la estructura */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+/* Sección principal para organizar el contenido */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navbar (Navegación) */
+.navbar {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom: 2px solid white;
+}
+
+/* Sección de los proyectos */
+.project-info h1{
+    font-size: 2.5rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Botón primario en la sección de los proyectos */
+.project-info2 .btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-info2 .btn-primary:hover {
+    background-color: #555;
+}
+
+/* Footer (Pie de página) */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-icons li {
+    margin: 0 15px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
